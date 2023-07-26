@@ -1,13 +1,5 @@
 import React, { useContext, useState } from "react";
-import {
-  Dimensions,
-  Modal,
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { Dimensions, Modal, StyleSheet, Text, TextInput,TouchableOpacity,View,} from "react-native";
 import { NewsContext } from "../API/context";
 import SingleNews from "./SingleNews";
 import { Entypo } from "@expo/vector-icons";
@@ -40,12 +32,12 @@ const Search = () => {
       <TextInput
         style={{
           ...styles.search,
-          backgroundColor: darkTheme ? "black" : "lightgrey",
-          color: darkTheme ? "white" : "black",
+          backgroundColor: darkTheme ? "lightgrey" : "black",
+          color: darkTheme ? "black" : "white",
         }}
         onChangeText={(text) => handleSearch(text)}
         placeholder="Search for news"
-        placeholderTextColor={darkTheme ? "white" : "grey"}
+        placeholderTextColor={darkTheme ? "black" : "white"}
       />
       <View style={styles.searchResults}>
         {searchResults.slice(0, 10).map((n) => (
@@ -57,8 +49,8 @@ const Search = () => {
             <Text
               style={{
                 ...styles.singleResult,
-                backgroundColor: darkTheme ? "black" : "white",
-                color: darkTheme ? "white" : "black",
+                backgroundColor: darkTheme ? "#8fa1c9" : "white",
+                color: darkTheme ? "black" : "black",
               }}
             >
               {n.title}

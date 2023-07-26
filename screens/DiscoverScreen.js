@@ -1,13 +1,5 @@
 import React, { useContext } from "react";
-import {
-  Dimensions,
-  Image,
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { Dimensions,Image,StyleSheet,Text,TextInput,TouchableOpacity,View,} from "react-native";
 import Carousel from "react-native-snap-carousel";
 import { categories, sources } from "../API/api";
 import { NewsContext } from "../API/context";
@@ -23,7 +15,7 @@ const DiscoverScreen = () => {
     <View style={styles.discover}>
       <Search />
       <Text
-        style={{ ...styles.subtitle, color: darkTheme ? "white" : "black" }}
+        style={{ ...styles.subtitle, color: darkTheme ? "#061538" : "black" }}
       >
         Categories
       </Text>
@@ -36,9 +28,10 @@ const DiscoverScreen = () => {
               onPress={() => setCategory(item.name)}
               style={styles.category}
             >
-              <Image source={{ uri: item.pic }} style={styles.categoryImage} />
+              <Image source={{ uri: item.pic }} style={[styles.categoryImage,{flexDirection:"column",
+              justifyContent: "center",}]} />
               <Text
-                style={{ ...styles.name, color: darkTheme ? "white" : "black" }}
+                style={{ ...styles.name,  }}
               >
                 {item.name}
               </Text>
@@ -52,9 +45,9 @@ const DiscoverScreen = () => {
         inactiveSlideOpacity={1}
       />
       <Text
-        style={{ ...styles.subtitle, color: darkTheme ? "white" : "black" }}
+        style={{ ...styles.subtitle,  }}
       >
-        Sources
+        News Channels
       </Text>
       <View style={styles.sources}>
         {sources.map((s) => (
@@ -83,7 +76,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     paddingBottom: 8,
     marginHorizontal: 5,
-    borderBottomColor: "#007FFF",
+    borderBottomColor: "#061538",
     borderBottomWidth: 5,
     alignSelf: "flex-start",
     borderRadius: 10,
@@ -91,8 +84,10 @@ const styles = StyleSheet.create({
   category: {
     height: 130,
     margin: 10,
+    borderRadius: 100,
     alignItems: "center",
-    justifyContent: "space-evenly",
+    backgroundColor: "#8fa1c9",
+    
   },
   categoryImage: {
     height: "60%",
@@ -112,13 +107,15 @@ const styles = StyleSheet.create({
   sourceContainer: {
     height: 150,
     width: "40%",
-    borderRadius: 10,
+    borderRadius: 80,
     margin: 15,
-    backgroundColor: "#cc313d",
+    backgroundColor: "#8fa1c9",
+    flexDirection:"column",
+    justifyContent: "center",
   },
   sourceImage: {
     height: "100%",
-    borderRadius: 10,
+    borderRadius: 80,
     resizeMode: "cover",
   },
 });
