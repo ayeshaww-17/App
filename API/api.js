@@ -84,9 +84,9 @@ export const categories = [
     },
   ];
   
-  export const BASE_URL = "https://saurav.tech/NewsAPI/";
+  export const BASE_URL = "https://documenter.getpostman.com/view/28785094/2s9XxsUbF5";
   
-  export const getNewsAPI = (category, country = "in") => {
+  export const getNewsAPI = (category, country = "us") => {
     return `${BASE_URL}/top-headlines/category/${category}/${country}.json`;
   };
   

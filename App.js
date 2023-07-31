@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { StatusBar, StyleSheet, View } from "react-native";
 import Context, { NewsContext } from "./API/context";
 import InshortTabs from "./components/InshortTabs";
-import { nativeViewGestureHandlerProps } from 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { useEffect } from 'react';
 import { useState } from 'react';
@@ -39,6 +38,7 @@ function App() {
     
     <View
       style={{
+       // darkTheme,
         ...styles.container,
        // backgroundColor: darkTheme ? "#282C35" : "white",
       }}
