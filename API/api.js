@@ -1,4 +1,3 @@
-// https://documenter.getpostman.com/view/3479169/Szf7zncp?version=latest#236e4205-de53-41e0-bfc2-f17d396f9741
 
 export const categories = [
     {
@@ -14,16 +13,9 @@ export const categories = [
     {
       code: "",
       pic: "https://img.icons8.com/fluent/96/000000/movie-projector.png",
-      name: "Glamor",
+      name: "Glamour",
     },
-   /* {
-      pic: "https://img.icons8.com/fluent/96/000000/stethoscope.png",
-      name: "health",
-    },*/
-    /*{
-      pic: "https://img.icons8.com/fluent/96/000000/microscope.png",
-      name: "science",
-    },*/
+   
     {
       pic: "https://img.icons8.com/fluent/96/000000/trophy.png",
       name: "sports",
@@ -67,16 +59,7 @@ export const categories = [
       name: "BBC News",
       pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/BBC_News_2019.svg/1200px-BBC_News_2019.svg.png",
     },
-  /*  {
-      id: "cnn",
-      name: "CNN",
-      pic: "https://bankimooncentre.org/wp-content/uploads/2020/06/cnn-logo-square.png",
-    },
-    {
-      id: "fox-news",
-      name: "Fox News",
-      pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fox_News_Channel_logo.svg/768px-Fox_News_Channel_logo.svg.png",
-    },*/
+  
     {
       id: "google-news",
       name: "Google News",
